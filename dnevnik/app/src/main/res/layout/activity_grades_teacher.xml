@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GradesTeacher">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="651dp"
+        android:layout_marginBottom="10dp"
+        android:text="Расписание"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="409dp"
+        android:layout_height="649dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="81dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewT1"
+                android:layout_width="match_parent"
+                style="@style/BlackTextView"
+                android:textSize="22dp"
+                android:layout_height="120dp"
+                android:gravity="center"
+                android:text="Общая и неорганическая химия" />
+
+            <TextView
+                android:id="@+id/textViewT2"
+                android:layout_width="match_parent"
+                style="@style/BlackTextView"
+                android:textSize="22dp"
+                android:layout_height="120dp"
+                android:gravity="center"
+                android:text="Аналитическая химия" />
+
+            <TextView
+                android:id="@+id/textViewT3"
+                android:layout_width="match_parent"
+                style="@style/BlackTextView"
+                android:textSize="22dp"
+                android:layout_height="120dp"
+                android:gravity="center"
+                android:text="Физическая химия" />
+
+            <TextView
+                android:id="@+id/textViewT4"
+                android:layout_width="match_parent"
+                style="@style/BlackTextView"
+                android:textSize="22dp"
+                android:layout_height="120dp"
+                android:gravity="center"
+                android:text="Коллоидная химия" />
+
+            <TextView
+                android:id="@+id/textViewT5"
+                android:layout_width="match_parent"
+                style="@style/BlackTextView"
+                android:textSize="22dp"
+                android:layout_height="120dp"
+                android:gravity="center"
+                android:text="Основы квантовой химии" />
+
+            <TextView
+                android:id="@+id/textViewT6"
+                android:layout_width="match_parent"
+                style="@style/BlackTextView"
+                android:textSize="22dp"
+                android:layout_height="120dp"
+                android:gravity="center"
+                android:text="Органическая химия" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

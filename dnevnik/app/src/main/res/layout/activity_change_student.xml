@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Uchenik">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="410dp"
+        android:layout_height="39dp"
+        style="@style/BlackTextView"
+        android:layout_marginTop="16dp"
+        android:gravity="center_horizontal"
+        android:text="РАСПИСАНИЕ ЗАНЯТИЙ"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/ButtonApplyChanges"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="16dp"
+        android:text="ОЦЕНКИ"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ScrollView
+        android:layout_width="403dp"
+        android:layout_height="597dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="57dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="77dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textMonChange"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:textSize="25dp"
+                android:ems="10"
+                style="@style/BlackTextView"
+                android:gravity="center_horizontal"
+                android:inputType="textMultiLine"
+                android:text="Понедельник" />
+
+            <EditText
+                android:id="@+id/editMonCh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                style="@style/BlackTextView"
+                android:ems="10"
+                android:text="Общая и неограническая химия \n 9:00-10:30 \n\n Начертательная геометрия \n 10:50 - 12:20 \n\n Философия \n 12:40 - 14:10 \n\n Физика \n 14:30 - 16:00"
+                android:gravity="start|top"
+                android:inputType="textMultiLine" />
+
+            <TextView
+                android:id="@+id/textTueCh"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:textSize="25dp"
+                android:ems="10"
+                style="@style/BlackTextView"
+                android:gravity="center_horizontal"
+                android:inputType="textMultiLine"
+                android:text="Вторник" />
+
+            <EditText
+                android:id="@+id/editTueCh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                style="@style/BlackTextView"
+                android:ems="10"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                android:text="Иностранный язык \n 9:00-10:30 \n\n Информатика \n 10:50 - 12:20 \n\n История \n 12:40 - 14:10 \n\n Органическая химия \n 14:30 - 16:00" />
+
+            <TextView
+                android:id="@+id/textWedCh"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:textSize="25dp"
+                style="@style/BlackTextView"
+                android:ems="10"
+                android:gravity="center_horizontal"
+                android:inputType="textMultiLine"
+                android:text="Среда" />
+
+            <EditText
+                android:id="@+id/editWedCh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                style="@style/BlackTextView"
+                android:ems="10"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                android:text="Общая и неорганическая химия \n 9:00-10:30 \n\n Инженерная графика \n 10:50 - 12:20 \n\n Математика \n 12:40 - 14:10" />
+
+            <TextView
+                android:id="@+id/textThuCh"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:textSize="25dp"
+                android:ems="10"
+                style="@style/BlackTextView"
+                android:gravity="center_horizontal"
+                android:inputType="textMultiLine"
+                android:text="Четверг" />
+
+            <EditText
+                android:id="@+id/editThuCh"
+                android:textSize="18dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="start|top"
+                style="@style/BlackTextView"
+                android:inputType="textMultiLine"
+                android:text="Органическая химия \n 9:00-10:30 \n\n Основы квантовой химии \n 10:50 - 12:20 \n\n Математика \n 12:40 - 14:10 \n\n Физическая химия \n 14:30 - 16:00" />
+
+            <TextView
+                android:id="@+id/textFriCh"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:textSize="25dp"
+                android:ems="10"
+                style="@style/BlackTextView"
+                android:gravity="center_horizontal"
+                android:inputType="textMultiLine"
+                android:text="Пятница" />
+
+            <EditText
+                android:id="@+id/editFriCh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:ems="10"
+                style="@style/BlackTextView"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                android:text="Физика \n 9:00-10:30 \n\n Аналитическая химия \n 10:50 - 12:20 \n\n Физическая культура и спорт \n 12:40 - 14:10 " />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
